@@ -32,15 +32,14 @@ Stop your Codespace when finished. [Codespaces usage limits apply](https://docs.
 
 ## Prefer to run locally?
 
-Only this option needs [Git](https://git-scm.com/downloads) and [Node.js v24 or newer](https://nodejs.org/en/download/).
+Only this option needs [Git](https://git-scm.com/downloads) and [Node.js v24.15.0 or newer](https://nodejs.org/en/download/).
 
 In **your new repository**, select **Code → Local → HTTPS** and copy its URL. Open a terminal and run the following, replacing `YOUR-REPOSITORY-URL` with that URL:
 
 ```sh
 git clone YOUR-REPOSITORY-URL
 cd hack-or-treat
-corepack enable
-corepack prepare pnpm@10.34.8 --activate
+npm install --global pnpm@12.15.0
 pnpm install
 pnpm dev
 ```
