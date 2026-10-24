@@ -7,6 +7,7 @@ describe("EventBrowser", () => {
   it("shows the fictional notice and all six event cards", () => {
     render(<EventBrowser />);
 
+    expect(screen.getByRole("img", { name: "Hack or Treat" })).toBeInTheDocument();
     expect(
       screen.getByText("Fictional sample schedule — not an actual campus event listing."),
     ).toBeInTheDocument();

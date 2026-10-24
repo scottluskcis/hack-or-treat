@@ -1,5 +1,7 @@
 import { Sparkles } from "lucide-react";
+import Image from "next/image";
 
+import logo from "../../public/hack-or-treat-logo.png";
 import { EventCard } from "@/components/event-card";
 import { events } from "@/data/events";
 
@@ -7,6 +9,17 @@ export function EventBrowser() {
   return (
     <main className="mx-auto w-full max-w-6xl px-5 py-12 sm:px-8 sm:py-16">
       <header className="mx-auto mb-10 max-w-2xl text-center sm:mb-14">
+        <div className="mx-auto mb-6 max-w-sm rounded-xl bg-orange-50 px-5 py-4">
+          <Image
+            src={logo}
+            alt="Hack or Treat"
+            width={1316}
+            height={287}
+            sizes="(max-width: 424px) calc(100vw - 80px), 344px"
+            priority
+            className="h-auto w-full"
+          />
+        </div>
         <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-violet-300/20 bg-violet-300/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-violet-100">
           <Sparkles aria-hidden="true" className="size-4" />
           October 31 · Campus guide
