@@ -1,0 +1,1 @@
+Follow the existing Next.js App Router, TypeScript, Tailwind CSS, and shadcn/ui patterns. Use pnpm only, keep changes focused, apply YAGNI, and do not add dependencies without a clear need. Preserve accessible labels, keyboard behavior, and visible focus. Run `pnpm lint`, `pnpm typecheck`, `pnpm test`, and `pnpm build`; report any check that cannot be run or fails.
