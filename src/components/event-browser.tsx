@@ -42,7 +42,7 @@ export function EventBrowser() {
               The lineup
             </p>
             <h2 id="events-heading" className="mt-1 text-2xl font-bold text-white">
-              Six ways to celebrate
+              Explore the lineup
             </h2>
           </div>
           <p className="hidden text-sm text-slate-400 sm:block">All times are campus local time</p>

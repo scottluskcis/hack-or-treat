@@ -4,7 +4,7 @@ import { describe, expect, it } from "vitest";
 import { EventBrowser } from "@/components/event-browser";
 
 describe("EventBrowser", () => {
-  it("shows the fictional notice and all six event cards", () => {
+  it("shows the fictional notice and all twelve event cards", () => {
     render(<EventBrowser />);
 
     expect(screen.getByRole("img", { name: "Hack or Treat" })).toBeInTheDocument();
@@ -14,6 +14,6 @@ describe("EventBrowser", () => {
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
       "Halloween plans? We’ve got the lineup.",
     );
-    expect(screen.getAllByRole("listitem")).toHaveLength(6);
+    expect(screen.getAllByRole("listitem")).toHaveLength(12);
   });
 });
